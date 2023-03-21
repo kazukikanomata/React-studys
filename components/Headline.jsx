@@ -1,8 +1,7 @@
-export default function Headline(props) {
+export function Headline(props) {
   return (
     <>
-        <h1>{ props.title }
-        </h1>
+        <h1>{ props.title }</h1>
     </>
   )
 }
