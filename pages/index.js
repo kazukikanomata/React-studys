@@ -1,10 +1,6 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
-import { Center } from '@/components/Center'
-import { Description } from '@/components/Description'
-import { Footer } from '@/components/Footer'
-import { Headline } from '@/components/Headline'
+import { Main } from '@/components/Main'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,13 +13,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <Headline title= "Index Page"/>
-
-        <Description page="index.js"/>
-        <Center />
-        <Footer />
-      </main>
+      <Main page="index"/>
     </>
   )
 }
