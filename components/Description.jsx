@@ -4,13 +4,13 @@ import styles from '@/styles/Home.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export function Description() {
+export function Description(props) {
   return (
     <>
         <div className={styles.description}>
           <p>
             Get started by editing&nbsp;
-            <code className={styles.code}>pages/index.tsx</code>
+            <code className={styles.code}>pages/{ props.page }</code>
           </p>
           <div>
             <a
